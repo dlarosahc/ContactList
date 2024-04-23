@@ -122,9 +122,11 @@ list.addEventListener('click', e => {
       return;
     }  else if (!nombreValido){
       nameEdit.classList.add('edit-error');
+      numberEdit.classList.remove('edit-error');
       alert('Nombre, por favor usar un formato valido');
       return;
     } else if (!telefonoValido){
+      nameEdit.classList.remove('edit-error');
       numberEdit.classList.add('edit-error');
       alert('Numero de Telefono incorrectos, por favor usar un formato valido');
       return;
