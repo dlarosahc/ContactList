@@ -89,6 +89,8 @@ form.addEventListener('submit', e => {
 
   renderContacts();
   form.reset();
+  nameInput.classList.remove('correct');
+  numberInput.classList.remove('correct');
 });
 
 list.addEventListener('click', e => {
