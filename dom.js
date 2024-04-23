@@ -123,12 +123,12 @@ list.addEventListener('click', e => {
     }  else if (!nombreValido && telefonoValido){
       nameEdit.classList.add('edit-error');
       numberEdit.classList.remove('edit-error');
-      alert('Nombre, por favor usar un formato valido');
+      alert('Nombre incorrecto, agregar Nombre y Apellido usando mayuscula solo en la primera letra de cada uno');
       return;
     } else if (!telefonoValido && nombreValido){
       nameEdit.classList.remove('edit-error');
       numberEdit.classList.add('edit-error');
-      alert('Numero de Telefono incorrectos, por favor usar un formato valido');
+      alert('Numero de Telefono incorrecto, por favor usar un numero telefonico Venezolano');
       return;
     }
       li.classList.remove('editando');
