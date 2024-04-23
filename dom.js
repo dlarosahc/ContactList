@@ -88,6 +88,7 @@ form.addEventListener('submit', e => {
   localStorage.setItem('contacts', JSON.stringify(contacts));
 
   renderContacts();
+  form.reset();
 });
 
 list.addEventListener('click', e => {
